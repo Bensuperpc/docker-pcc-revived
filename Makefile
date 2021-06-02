@@ -8,11 +8,11 @@
 #//////////////////////////////////////////////////////////////
 #//                                                          //
 #//  Script, 2021                                            //
-#//  Created: 02, June, 2021                                 //
-#//  Modified: 02, June, 2021                                //
+#//  Created: 03, June, 2021                                 //
+#//  Modified: 03, June, 2021                                //
 #//  file: -                                                 //
 #//  -                                                       //
-#//  Source: https://github.com/axiom-data-science/rsync-server                                               //
+#//  Source:                                                 //
 #//          https://www.docker.com/blog/getting-started-with-docker-for-arm-on-linux/
 #//          https://schinckel.net/2021/02/12/docker-%2B-makefile/
 #//          https://www.padok.fr/en/blog/multi-architectures-docker-iot
@@ -34,7 +34,7 @@ VERSION := 1.0.0
 
 #Not in debian buster : riscv64
 
-ARCH_LIST := linux/amd64 linux/arm64 linux/ppc64le linux/s390x linux/386 linux/arm/v7 linux/arm/v6
+ARCH_LIST := linux/amd64 linux/arm64 linux/386
 comma:= ,
 COM_ARCH_LIST:= $(subst $() $(),$(comma),$(ARCH_LIST))
 
